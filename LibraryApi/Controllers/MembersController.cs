@@ -85,7 +85,7 @@ public class MembersController : ControllerBase
         _db.Members.Remove(member);
         await _db.SaveChangesAsync();
 
-        return NoContent();
+        return Ok($"Member: {member.MemberFirstName} {member.MemberLastName} has been removed successfully");
     }
 
     // GET: api/Members/Me

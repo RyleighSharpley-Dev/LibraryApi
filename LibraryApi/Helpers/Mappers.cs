@@ -25,6 +25,7 @@ namespace LibraryApi
                 MemberFirstName = member.MemberFirstName,
                 MemberLastName = member.MemberLastName,
                 Role = member.Role,
+                ApiKey = member.ApiKey,
                 BorrowedBookIds = member.BorrowedBooks?.Select(b => b.BookId).ToList()
             };
         }

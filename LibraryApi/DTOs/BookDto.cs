@@ -15,9 +15,7 @@
         public string MemberFirstName { get; set; } = string.Empty;
         public string MemberLastName { get; set; } = string.Empty;
         public string Role { get; set; } = "Member";
-
-        // Instead of embedding full books with Member again,
-        // only return IDs or trimmed down DTOs
+        public string ApiKey { get; set; } = string.Empty;
         public List<Guid>? BorrowedBookIds { get; set; }
     }
 }
